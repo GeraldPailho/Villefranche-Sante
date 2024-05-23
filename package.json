@@ -1,0 +1,16 @@
+{
+  "name": "villefranchesante",
+  "version": "1.0.0",
+  "description": "Site regroupant les professionnels de santé de la ville de Villefranche-de-Rouergue.\r Nom du créateur : Gerald Pailhories\r Projet \"fil rouge\" de la formation AFPA DWWM-23526",
+  "main": "index.js",
+  "scripts": {
+    "scss-compile": "sass customBootstrap.scss:index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.2"
+  }
+}

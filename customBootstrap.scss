@@ -1,0 +1,37 @@
+@import "./node_modules/bootstrap/scss/functions";
+
+// définir mes variables de couleurs personnalisées
+$green1: #a8d5ba;
+$green2: #b3cdbd;
+$green3: #bdc4c0;
+$gray1: #4a4a4a;
+$gray2: #c6bbc2;
+$fuchsia1: #de9fca;
+$fuchsia2: #d7a9c7;
+$fuchsia3: #cfb2c5;
+
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/variables-dark";
+
+// ajouter dans les maps bootstrap
+$custom-theme-colors: (
+  green1: $green1,
+  green2: $green2,
+  green3: $green3,
+  gray1: $gray1,
+  gray2: $gray2,
+  fuchsia1: $fuchsia1,
+  fuchsia2: $fuchsia2,
+  fuchsia3: $fuchsia3,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// créer 100 class bootstrap width pour augmenter les possibilités
+@for $i from 0 through 100 {
+    .w-#{$i} {
+        width: 1%*$i !important;
+    }
+}

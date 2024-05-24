@@ -1,0 +1,43 @@
+header nav div a #logo {
+    width: 40% !important;
+}
+header nav div h2 {
+    font-size: 90% !important;
+}
+header nav div div form {
+    width: 80% !important;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    header nav div a #logo {
+        width: 50% !important;
+    }
+    header nav div h2 {
+        font-size: 110% !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    header nav div a #logo {
+        width: 60% !important;
+    }
+    header nav div h2 {
+        font-size: 150% !important;
+    }
+    header nav div div form {
+        width: 60% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header nav div a #logo {
+        width: 60% !important;
+    }
+    header nav div h2 {
+        font-size: 150% !important;
+    }
+    header nav div div form {
+        max-width: 720px !important;
+    }
+}

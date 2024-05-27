@@ -6,13 +6,15 @@
     <title>Villefranche-Santé</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./src/styles/style.css">
+
+    <script src="https://kit.fontawesome.com/3f2a6fba09.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="bg-green1">
         <nav class="navbar bg-green1">
             <div class="container-fluid justify-content-center justify-content-md-between">
                 <a class="navbar-brand m-0 px-3 text-center text-md-start" href="./index.html"><img id="logo" class="w-80" src="./src/images/LogofuchsiaVert.png" alt="logo et lien page accueil"><h1 class="d-none">villefranche de rougue santé</h1></a>
-                <button class="d-none d-md-inline btn btn-light btn-sm rounded-4 text-gray1 shadow mx-3" type="button"><span class="fw-semibold text-uppercase mx-3">connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
+                <button class="d-none d-md-inline btn btn-light btn-sm rounded-4 text-gray1 shadow mx-3" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
             </div>
         </nav>
         <nav class="navbar bg-green1 pt-0 pb-md-3">
@@ -31,39 +33,102 @@
         </nav>
         <div class="container-fluid d-md-none border-bottom bg-white">
             <div class="d-flex justify-content-center py-3">
-                <button class="btn btn-green1 rounded-4 text-gray1 shadow" type="button"><span class="fw-semibold text-uppercase mx-3">connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
+                <button class="btn btn-green1 rounded-4 text-gray1 shadow" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
             </div>
         </div>
     </header>
+
     <main class="container">
         <div class="row">
-            <div class="d-none d-lg-flex col-md-3 bg-gray2">
-                <ul>
-                    <li><a href="#" class="text-decoration-none link-gray1">Allergologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Chirurgien dentiste</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Dermatologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Endocrinologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Gastro-entérologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Gynécologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Infirmier à domicile</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Kinésithérapeute</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Médecin généraliste</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Ophtalmologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Opticien</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">ORL</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Ostéopathe</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Pharmacien</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Podologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Psychiatre</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Psychologue</a></li>
-                    <li><a href="#" class="text-decoration-none link-gray1">Rhumatologue</a></li>
-                    <li class="fs-6 text-uppercase"><a class="text-decoration text-decoration-none link-gray1" href="#">Voir toutes les spécialités</a></li>
-                </ul>
+            <aside class="d-none d-lg-flex col-lg-3 col-xl-2 bg-gray2">
+                <div class="row">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-calendar-days text-fuchsia pe-2"></i><Ri:v></Ri:v>Rendez-vous</a></li>
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-star text-warning pe-2"></i></i>Favoris</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1 pt-5">Allergologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Chirurgien dentiste</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Dermatologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Endocrinologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Gastro-entérologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Gynécologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Infirmier à domicile</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Kinésithérapeute</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Médecin généraliste</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Ophtalmologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Opticien</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">ORL</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Ostéopathe</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Pharmacien</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Podologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Psychiatre</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Psychologue</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-gray1">Rhumatologue</a></li>
+                        <li class="nav-item fs-6 text-uppercase"><a class="nav-link text-decoration text-decoration-none link-gray1" href="#">Voir toutes les spécialités</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <div class="col-lg-9 text-center px-4 ps-lg-5">
+                <h2 class="fs-1 mt-4 pt-5">Bienvenue sur Villefranche-Santé</h2>
+                <h3 class="fs-3 pb-5 pt-2">Le partinaire santé des Villefranchois</h3>
+                <div class="row">
+                    <div class="col-sm-6 py-5">
+                        <a class="text-decoration-none" href="#">
+                            <p class="fs-5 text-gray1">Prenez votre santé en main</p>
+                            <img class="w-40" src="./src/images/coeur.jpg" alt="image calendier">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 py-5">
+                        <a class="text-decoration-none" href="#">
+                            <p class="fs-5 text-gray1">Gérer vos rendez-vous</p>
+                            <img class="w-40" src="./src/images/calendrier.jpg" alt="image calendier">
+                        </a>
+                    </div>
+                </div>
+                <h3 class="fs-3 pt-5">Une Vie Plus Sereine</h3>
+                <p class="fs-5 pb-5 m-0">Un accès simplifié à la santé</p>
+                <div class="d-flex justify-content-between py-5">
+                    <div class="row justify-content-center justify-content-sm-end align-items-center">
+                        <p class="col-12 col-sm-8 col-lg-6 text-sm-end m-0 pb-3 pb-sm-0">Facilitez vos recherche, trouvez facilement un professionnel de santé grace à la barre de recherche en haute de page</p>
+                        <div class="col-8 col-sm-4">
+                            <img class="w-100" src="./src/images/BarreRecherche.png" alt="image barre de recherche">  
+                        </div>                    
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between py-5">
+                    <div class="row justify-content-center justify-content-lg-start align-items-center">
+                        <div class="col-8 col-sm-4 order-2 order-sm-1">
+                            <img class="w-100" src="./src/images/PiedPage.png" alt="image liens pied page">  
+                        </div>
+                        <p class="col-12 col-sm-8 col-lg-6 order-1 order-sm-2 text-sm-start m-0 mb-3 mb-sm-0">Naviguez facilement entre les différentes spécialités avec la navigation en pied de page</p>
+                    </div>
+                </div>
+                <h3 class="fs-3 pt-5">Prenez le Contrôle de Votre Santé</h3>
+                <p class="fs-5 pb-5">Des solutions adaptées à vos besoins</p>
+                <div class="d-flex justify-content-between py-5 py-sm-4">
+                    <div class="row justify-content-center justify-content-sm-end align-items-center">
+                        <p class="col-12 col-sm-8 col-lg-6 text-sm-end m-0 pb-3 pb-md-0">Garder vos spécialiste à porté de main en les enregistrant dans vos favoris</p>
+                        <div class="col-8 col-sm-4 col-md-2">
+                            <img class="d-sm-none w-50" src="./src/images/favoris.png" alt="image barre de recherche">  
+                            <img class="d-none d-sm-flex w-80" src="./src/images/favoris.png" alt="image barre de recherche">  
+                        </div>                    
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between py-5 py-sm-4">
+                    <div class="row justify-content-center justify-content-sm-start align-items-center">
+                        <p class="col-12 col-sm-8 col-lg-6 order-1 order-sm-2 text-sm-start m-0">Garder vos spécialiste à porté de main en les enregistrant dans vos favoris</p>                   
+                        <div class="col-12 col-sm-4 col-md-2 order-2 order-sm-1">
+                            <img class="d-sm-none w-50" src="./src/images/calendrier2.jpg" alt="image barre de recherche">  
+                            <img class="d-none d-sm-flex w-100" src="./src/images/calendrier2.jpg" alt="image barre de recherche">  
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
     <footer class="container-fluid bg-green1">
-        <div class="row my-0 py-0 justify-content-center py-2">
+        <div class="row my-0 py-0 justify-content-center pb-2 pt-3">
             <div class="d-none d-md-flex col-md-3 col-xl-2 justify-content-center">
                 <ul>
                     <li><a href="#" class="text-decoration-none link-gray1">Allergologue</a></li>

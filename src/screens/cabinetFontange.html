@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villefranche-Santé</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <script src="https://kit.fontawesome.com/3f2a6fba09.js" crossorigin="anonymous"></script>
 </head>
@@ -13,7 +13,7 @@
     <header class="bg-green1">
         <nav class="navbar bg-green1">
             <div class="container-fluid justify-content-center justify-content-md-between">
-                <a class="navbar-brand m-0 px-3 text-center text-md-start" href="./index.html"><img id="logo" class="w-80" src="./src/images/LogofuchsiaVert.png" alt="logo et lien page accueil"><h1 class="d-none">villefranche de rougue santé</h1></a>
+                <a class="navbar-brand m-0 px-3 text-center text-md-start" href="../../index.html"><img id="logo" class="w-80" src="../images/LogofuchsiaVert.png" alt="logo et lien page accueil"><h1 class="d-none">villefranche de rougue santé</h1></a>
                 <button class="d-none d-md-inline btn btn-light btn-sm rounded-4 text-gray1 shadow mx-3" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
             </div>
         </nav>
@@ -39,7 +39,7 @@
     </header>
 
     <main class="container">
-        <div class="row">
+        <div class="row m-0">
             <aside class="d-none d-lg-flex col-lg-3 col-xl-2 bg-gray2">
                 <div class="row">
                     <ul class="nav flex-column">
@@ -51,7 +51,7 @@
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Endocrinologue</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Gastro-entérologue</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Gynécologue</a></li>
-                        <li class="nav-item"><a href="./src/screens/infirmierDomicile.html" class="nav-link link-gray1">Infirmier à domicile</a></li>
+                        <li class="nav-item"><a href="./infirmierDomicile.html" class="nav-link link-gray1">Infirmier à domicile</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Kinésithérapeute</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Médecin généraliste</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Ophtalmologue</a></li>
@@ -67,59 +67,41 @@
                     </ul>
                 </div>
             </aside>
-            
-            <div class="col-lg-9 text-center px-4 ps-lg-5">
-                <h2 class="fs-1 mt-4 pt-5">Bienvenue sur Villefranche-Santé</h2>
-                <h3 class="fs-3 pb-5 pt-2">Le partinaire santé des Villefranchois</h3>
-                <div class="row">
-                    <div class="col-sm-6 py-5">
-                        <a class="text-decoration-none" href="#">
-                            <p class="fs-5 text-gray1">Prenez votre santé en main</p>
-                            <img class="w-40" src="./src/images/coeur.jpg" alt="image calendier">
-                        </a>
-                    </div>
-                    <div class="col-sm-6 py-5">
-                        <a class="text-decoration-none" href="#">
-                            <p class="fs-5 text-gray1">Gérer vos rendez-vous</p>
-                            <img class="w-40" src="./src/images/calendrier.jpg" alt="image calendier">
-                        </a>
-                    </div>
-                </div>
-                <h3 class="fs-3 pt-5">Une Vie Plus Sereine</h3>
-                <p class="fs-5 pb-5 m-0">Un accès simplifié à la santé</p>
-                <div class="d-flex justify-content-between py-5">
-                    <div class="row justify-content-center justify-content-sm-end align-items-center">
-                        <p class="col-12 col-sm-8 col-lg-6 text-sm-end m-0 pb-3 pb-sm-0">Facilitez vos recherche, trouvez facilement un professionnel de santé grace à la barre de recherche en haute de page</p>
-                        <div class="col-8 col-sm-4">
-                            <img class="w-100" src="./src/images/BarreRecherche.png" alt="image barre de recherche">  
-                        </div>                    
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between py-5">
-                    <div class="row justify-content-center justify-content-lg-start align-items-center">
-                        <div class="col-8 col-sm-4 order-2 order-sm-1">
-                            <img class="w-100" src="./src/images/PiedPage.png" alt="image liens pied page">  
+
+            <div class="col-12 col-lg-9 row p-5">
+                <div>
+                    <h2 class="text-center text-gray1 text-uppercase p-3">Cabinet infirmieres à domicile</h2>
+                    <p class="text-center text-gray1 fs-4">Résidence Le Sud, Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
+                    <div class="row d-flex justify-content-center align-items-center py-5">
+                        <div class="card shadow m-3 p-0" style="width: 16rem;">
+                            <img src="../images/logoInfirmiere.png" class="card-img-top bg-gray2" alt="logo cabinet">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-gray1">Christelle Pailhories<br>06 11 22 33 44</h5>
+                                <p class="card-text text-gray1">Résidence Le Sud,<br>Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
+                                <div class="text-center">
+                                    <button class="btn btn-fuchsia text-white shadow" type="button">Contacter</button>
+                                </div>
+                            </div>
                         </div>
-                        <p class="col-12 col-sm-8 col-lg-6 order-1 order-sm-2 text-sm-start m-0 mb-3 mb-sm-0">Naviguez facilement entre les différentes spécialités avec la navigation en pied de page</p>
-                    </div>
-                </div>
-                <h3 class="fs-3 pt-5">Prenez le Contrôle de Votre Santé</h3>
-                <p class="fs-5 pb-5">Des solutions adaptées à vos besoins</p>
-                <div class="d-flex justify-content-between py-5 py-sm-4">
-                    <div class="row justify-content-center justify-content-sm-end align-items-center">
-                        <p class="col-12 col-sm-8 col-lg-6 text-sm-end m-0 pb-3 pb-md-0">Garder vos spécialiste à porté de main en les enregistrant dans vos favoris</p>
-                        <div class="col-8 col-sm-4 col-md-2">
-                            <img class="d-sm-none w-50" src="./src/images/favoris.png" alt="image barre de recherche">  
-                            <img class="d-none d-sm-flex w-80" src="./src/images/favoris.png" alt="image barre de recherche">  
-                        </div>                    
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between py-5 py-sm-4">
-                    <div class="row justify-content-center justify-content-sm-start align-items-center">
-                        <p class="col-12 col-sm-8 col-lg-6 order-1 order-sm-2 text-sm-start m-0">Garder vos spécialiste à porté de main en les enregistrant dans vos favoris</p>                   
-                        <div class="col-12 col-sm-4 col-md-2 order-2 order-sm-1">
-                            <img class="d-sm-none w-50" src="./src/images/calendrier2.jpg" alt="image barre de recherche">  
-                            <img class="d-none d-sm-flex w-100" src="./src/images/calendrier2.jpg" alt="image barre de recherche">  
+                        <div class="card shadow m-3 p-0" style="width: 16rem;">
+                            <img src="../images/logoInfirmiere.png" class="card-img-top bg-gray2" alt="logo cabinet">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-gray1">Cârine Schiavone<br>06 11 22 33 44</h5>
+                                <p class="card-text text-gray1">Résidence Le Sud,<br>Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
+                                <div class="text-center">
+                                    <button class="btn btn-fuchsia text-white shadow" type="button">Contacter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow m-3 p-0" style="width: 16rem;">
+                            <img src="../images/logoInfirmiere.png" class="card-img-top bg-gray2" alt="logo cabinet">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-gray1">Céline Garrigue<br>06 11 22 33 44</h5>
+                                <p class="card-text text-gray1">Résidence Le Sud,<br>Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
+                                <div class="text-center">
+                                    <button class="btn btn-fuchsia text-white shadow" type="button">Contacter</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,7 +123,7 @@
             </div>
             <div class="d-none d-md-flex col-md-3 col-xl-2 justify-content-center">
                 <ul>
-                    <li><a href="./src/screens/infirmierDomicile.html" class="text-decoration-none link-gray1">Infirmier à domicile</a></li>
+                    <li><a href="#" class="text-decoration-none link-gray1">Infirmier à domicile</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Kinésithérapeute</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Médecin généraliste</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Ophtalmologue</a></li>
@@ -167,7 +149,7 @@
                     <li><a href="#" class="text-decoration-none link-gray1">Endocrinologue</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Gastro-entérologue</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Gynécologue</a></li>
-                    <li><a href="./src/screens/infirmierDomicile.html" class="text-decoration-none link-gray1">Infirmier à domicile</a></li>
+                    <li><a href="#" class="text-decoration-none link-gray1">Infirmier à domicile</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Kinésithérapeute</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Médecin généraliste</a></li>
                 </ul>
@@ -193,7 +175,7 @@
                     <li><a href="#" class="text-decoration-none link-gray1">Endocrinologue</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Gastro-entérologue</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Gynécologue</a></li>
-                    <li><a href="./src/screens/infirmierDomicile.html" class="text-decoration-none link-gray1">Infirmier à domicile</a></li>
+                    <li><a href="#" class="text-decoration-none link-gray1">Infirmier à domicile</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Kinésithérapeute</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Médecin généraliste</a></li>
                     <li><a href="#" class="text-decoration-none link-gray1">Ophtalmologue</a></li>
@@ -215,6 +197,6 @@
             </div>
             <p class="col-12 text-center col-12 border-top m-0 pt-2">© Copyright 2024 Pailhories Gérald. Tous droits réservés</p>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>

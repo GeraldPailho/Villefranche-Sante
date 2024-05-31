@@ -48,10 +48,28 @@ const topFunction = () => {
 // récupére le formulaire contenant la barre de recherche et le bouton
 let barreRecherche = document.querySelector('#formRecherche');
 
-// récupére la chaine de caractère entrée dans la barre de recherche (et l'affiche dans la console)
+// écoute la chaine de caractère entrée dans la barre de recherche et lancer la fonction contrôleSaisie
 barreRecherche.textUser.addEventListener('change', function(){
-    console.log(this.value);
+    controleSaisie(this.value);
 })
 
+// écoute 
+barreRecherche.addEventListener('submit', function(e){
+    e.preventDefault();
+    console.log('rediriger vers la page correspondante au texte de recherche');
+})
 
+// fonction pour contrôler si des mots sont présent dans une chaine de caractères
+const controleSaisie = (text) => {
+    
+    if (newRegex("christelle|pailhories|carine|cârine|schiavone|celine|céline|garrigue|sud|place|louis|fontanges").test(text) == true) {
+        window.location.href = './cabinetFontange.html';
+    }
 
+}
+
+// fonction pour générer une nouvelle variable nommé regex
+const newRegex = (words) => {
+    const regex = new RegExp (words, "i");
+    return regex;
+}

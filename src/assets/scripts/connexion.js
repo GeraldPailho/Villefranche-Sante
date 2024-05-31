@@ -12,7 +12,7 @@ form.mp.addEventListener('change', function(){
     validMp(this);
 })
 
-// écouter l'envoi du formulaire'
+// écouter l'envoi du formulaire
 form.addEventListener('submit', function(e){
     e.preventDefault();
 

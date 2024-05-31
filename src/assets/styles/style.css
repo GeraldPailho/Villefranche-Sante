@@ -66,15 +66,15 @@ header nav div div form {
         bottom: 20px;
         right: 30px;
         z-index: 99;
-        border: none; /* Pas de bordure */
-        background-color: #b7adb4;
+        border: none; 
+        background-color: rgb(116, 103, 112, 0.5);
         color: white;
         padding: 15px;
         border-radius: 10px;
     }
 
     #btnTop:hover {
-        background-color: #4a4a4a;
+        background-color: #746770;
     }
 
 

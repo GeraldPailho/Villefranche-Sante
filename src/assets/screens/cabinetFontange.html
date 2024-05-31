@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villefranche-Santé</title>
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../../index.css">
     <link rel="stylesheet" href="../styles/style.css">
 
     <script src="https://kit.fontawesome.com/3f2a6fba09.js" crossorigin="anonymous"></script>
@@ -13,8 +13,8 @@
     <header class="bg-green1">
         <nav class="navbar bg-green1">
             <div class="container-fluid justify-content-center justify-content-md-between">
-                <a class="navbar-brand m-0 px-3 text-center text-md-start" href="../../index.html"><img id="logo" class="w-80" src="../images/LogofuchsiaVert.png" alt="logo et lien page accueil"><h1 class="d-none">villefranche de rougue santé</h1></a>
-                <button class="d-none d-md-inline btn btn-light btn-sm rounded-4 text-gray1 shadow mx-3" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
+                <a class="navbar-brand m-0 px-3 text-center text-md-start" href="../../../index.html"><img id="logo" class="w-80" src="../images/LogofuchsiaVert.png" alt="logo et lien page accueil"><h1 class="d-none">villefranche de rougue santé</h1></a>
+                <button class="d-none d-md-inline btn btn-light btn-sm rounded-4 text-gray1 shadow mx-3 btnConnexion" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
             </div>
         </nav>
         <nav class="navbar bg-green1 pt-0 pb-md-3">
@@ -33,7 +33,7 @@
         </nav>
         <div class="container-fluid d-md-none border-bottom bg-white">
             <div class="d-flex justify-content-center py-3">
-                <button class="btn btn-green1 rounded-4 text-gray1 shadow" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
+                <button class="btn btn-green1 rounded-4 text-gray1 shadow btnConnexion" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
             </div>
         </div>
     </header>
@@ -43,8 +43,9 @@
             <aside class="d-none d-lg-flex col-lg-3 col-xl-2 bg-gray2">
                 <div class="row">
                     <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-calendar-days text-fuchsia pe-2"></i><Ri:v></Ri:v>Rendez-vous</a></li>
-                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-star text-warning pe-2"></i></i>Favoris</a></li>
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-user text-primary pe-2"></i>Mon compte</a></li>
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-calendar-days text-fuchsia pe-2"></i>Rendez-vous</a></li>
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-star text-warning pe-2"></i>Favoris</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1 pt-5">Allergologue</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Chirurgien dentiste</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Dermatologue</a></li>
@@ -70,16 +71,36 @@
 
             <div class="col-12 col-lg-9 row p-5">
                 <div>
-                    <h2 class="text-center text-gray1 text-uppercase p-3">Cabinets infirmiers à domicile</h2>
-                    <h3 class="text-center text-gray1">Villefranche-de-Rouergue</h3>
+                    <h2 class="text-center text-gray1 text-uppercase p-3">Cabinet infirmieres à domicile</h2>
+                    <p class="text-center text-gray1 fs-4">Résidence Le Sud, Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
                     <div class="row d-flex justify-content-center align-items-center py-5">
-                        <div class="card shadow m-3 p-0" style="width: 12rem;">
-                            <img src="../images/cabinetInfirmier.jpg" class="card-img-top bg-gray2 border-bottom" alt="logo cabinet">
+                        <div class="card shadow m-3 p-0" style="width: 16rem;">
+                            <img src="../images/logoInfirmiere.png" class="card-img-top bg-gray2" alt="logo cabinet">
                             <div class="card-body">
-                                <h5 class="card-title text-center">3 infirmières</br>Rés. Le-Sud, Place Fontange</h5>
-                                <br class="card-text">Christelle Pailhories</br>Cârine Schiavone</br>Céline Garrigue</p>
+                                <h5 class="card-title text-center text-gray1">Christelle Pailhories<br>06 11 22 33 44</h5>
+                                <p class="card-text text-gray1">Résidence Le Sud,<br>Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
                                 <div class="text-center">
-                                    <a href="./cabinetFontange.html" class="btn btn-fuchsia text-white shadow">Consulter</a>
+                                    <button class="btn btn-fuchsia text-white shadow" type="button">Contacter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow m-3 p-0" style="width: 16rem;">
+                            <img src="../images/logoInfirmiere.png" class="card-img-top bg-gray2" alt="logo cabinet">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-gray1">Cârine Schiavone<br>06 11 22 33 44</h5>
+                                <p class="card-text text-gray1">Résidence Le Sud,<br>Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
+                                <div class="text-center">
+                                    <button class="btn btn-fuchsia text-white shadow" type="button">Contacter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow m-3 p-0" style="width: 16rem;">
+                            <img src="../images/logoInfirmiere.png" class="card-img-top bg-gray2" alt="logo cabinet">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-gray1">Céline Garrigue<br>06 11 22 33 44</h5>
+                                <p class="card-text text-gray1">Résidence Le Sud,<br>Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
+                                <div class="text-center">
+                                    <button class="btn btn-fuchsia text-white shadow" type="button">Contacter</button>
                                 </div>
                             </div>
                         </div>
@@ -178,5 +199,7 @@
             <p class="col-12 text-center col-12 border-top m-0 pt-2">© Copyright 2024 Pailhories Gérald. Tous droits réservés</p>
         </div>
     </footer>    
+
+    <script src="../../../index.js"></script>
 </body>
 </html>

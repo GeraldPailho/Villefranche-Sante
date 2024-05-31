@@ -60,6 +60,24 @@ header nav div div form {
     width: 80% !important;
 }
 
+/* style du bouton Remonter en haut de page */
+    #btnTop {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none; /* Pas de bordure */
+        background-color: #b7adb4;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #btnTop:hover {
+        background-color: #4a4a4a;
+    }
+
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
     header nav div a #logo {
         width: 50% !important;

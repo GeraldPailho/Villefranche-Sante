@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villefranche-Santé</title>
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../../index.css">
     <link rel="stylesheet" href="../styles/style.css">
 
     <script src="https://kit.fontawesome.com/3f2a6fba09.js" crossorigin="anonymous"></script>
@@ -13,8 +13,8 @@
     <header class="bg-green1">
         <nav class="navbar bg-green1">
             <div class="container-fluid justify-content-center justify-content-md-between">
-                <a class="navbar-brand m-0 px-3 text-center text-md-start" href="../../index.html"><img id="logo" class="w-80" src="../images/LogofuchsiaVert.png" alt="logo et lien page accueil"><h1 class="d-none">villefranche de rougue santé</h1></a>
-                <button class="d-none d-md-inline btn btn-light btn-sm rounded-4 text-gray1 shadow mx-3" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
+                <a class="navbar-brand m-0 px-3 text-center text-md-start" href="../../../index.html"><img id="logo" class="w-80" src="../images/LogofuchsiaVert.png" alt="logo et lien page accueil"><h1 class="d-none">villefranche de rougue santé</h1></a>
+                <button class="d-none d-md-inline btn btn-light btn-sm rounded-4 text-gray1 shadow mx-3 btnConnexion" type="button"><span class="fw-semibold text-uppercase mx-3"><i class="fa-solid fa-right-to-bracket pe-2"></i>connexion</span><br><span class="fst-italic fw-light">créer compte</span></button>            
             </div>
         </nav>
         <nav class="navbar bg-green1 pt-0 pb-md-3">
@@ -26,7 +26,7 @@
                         <button class="d-none d-md-inline btn btn-fuchsia rounded-4 text-white" type="submit">Rechercher</button>
                     </form>
                     <div class="col-12 d-flex justify-content-center">
-                        <button class="d-block btn btn-fuchsia rounded-4 text-white mb-2 mt-3 d-md-none" type="submit">Rechercher</button>           
+                        <button class="d-block btn btn-fuchsia rounded-4 text-white mb-2 mt-3 d-md-none btnConnexion" type="submit">Rechercher</button>           
                     </div>
                 </div>
             </div>
@@ -43,8 +43,9 @@
             <aside class="d-none d-lg-flex col-lg-3 col-xl-2 bg-gray2">
                 <div class="row">
                     <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-calendar-days text-fuchsia pe-2"></i><Ri:v></Ri:v>Rendez-vous</a></li>
-                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-star text-warning pe-2"></i></i>Favoris</a></li>
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-user text-primary pe-2"></i>Mon compte</a></li>
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-calendar-days text-fuchsia pe-2"></i>Rendez-vous</a></li>
+                        <li class="nav-item"><a class="nav-link link-underline fs-5 text-gray1 pt-5" href="#"><i class="fa-solid fa-star text-warning pe-2"></i>Favoris</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1 pt-5">Allergologue</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Chirurgien dentiste</a></li>
                         <li class="nav-item"><a href="#" class="nav-link link-gray1">Dermatologue</a></li>
@@ -70,51 +71,18 @@
 
             <div class="col-12 col-lg-9 row p-5">
                 <div>
-                    <h2 class="text-center text-gray1 text-uppercase p-3">Formulaire de contact</h2>
-                    <div class="row d-flex justify-content-center align-items-center bg-gray2 shadow rounded-5 py-5">
-                        <div class="card col-6 m-3 p-0" style="width: 16rem;">
-                            <img src="../images/logoInfirmiere.png" class="card-img-top" alt="logo cabinet">
+                    <h2 class="text-center text-gray1 text-uppercase p-3">Cabinets infirmiers à domicile</h2>
+                    <h3 class="text-center text-gray1">Villefranche-de-Rouergue</h3>
+                    <div class="row d-flex justify-content-center align-items-center py-5">
+                        <div class="card shadow m-3 p-0" style="width: 12rem;">
+                            <img src="../images/cabinetInfirmier.jpg" class="card-img-top bg-gray2 border-bottom" alt="logo cabinet">
                             <div class="card-body">
-                                <h5 class="card-title text-center text-gray1">Christelle Pailhories<br>06 11 22 33 44</h5>
-                                <p class="card-text text-gray1">Résidence Le Sud,<br>Place Louis Fontanges<br>12200 Villefranche-de-Rouergue</p>
+                                <h5 class="card-title text-center">3 infirmières</br>Rés. Le-Sud, Place Fontange</h5>
+                                <br class="card-text">Christelle Pailhories</br>Cârine Schiavone</br>Céline Garrigue</p>
+                                <div class="text-center">
+                                    <a href="./cabinetFontange.html" class="btn btn-fuchsia text-white shadow">Consulter</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <form>
-                                <div class="mb-2">
-                                    <label for="nom" class="form-label m-0">Nom</label>
-                                    <input type="text" class="form-control" id="nom" name="nom" value="" minlength="2" pattern="[a-zA-Z]+" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="prenom" class="form-label m-0">Prénom</label>
-                                    <input type="prenom" class="form-control" id="prenom" value="" minlength="2" pattern="[a-zA-Z]+" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="adresse" class="form-label m-0">Adresse</label>
-                                    <input type="text" class="form-control" id="adresse" value="" minlength="2" pattern="([0-9]*) ?([a-zA-Z,\. ]*) ?([0-9]{5}) ?([a-zA-Z]*)" required placeholder="adresse">
-                                    <div class="row d-flex">
-                                        <div class="col-sm-3 pe-sm-0">
-                                            <input type="text" class="form-control" id="cp" value="" minlength="2" pattern="[0-9]{5}" required placeholder="CP">
-                                        </div>
-                                        <div class="col-sm-9 ps-sm-0">
-                                            <input type="text" class="form-control" id="ville" value="" minlength="2" pattern="[a-zA-Z]+" required placeholder="Ville">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="email" class="form-label m-0">Email</label>
-                                    <input type="email" class="form-control" id="email" value="" pattern="(.){2,}@(.){2,}\.[a-zA-Z]{2,4}" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="telephone" class="form-label m-0">Téléphone</label>
-                                    <input type="tel" class="form-control" id="telephone" value="" pattern="(0|(\\+33)|(0033))[1-9][0-9]{8}" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="message" class="form-label m-0">Message</label>
-                                    <textarea class="form-control" name="message" id="message" value="" rows="3" maxlength="50" placeholder="Types de soins, questions,..." required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-fuchsia text-white mt-3">Envoyer</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -210,6 +178,8 @@
             </div>
             <p class="col-12 text-center col-12 border-top m-0 pt-2">© Copyright 2024 Pailhories Gérald. Tous droits réservés</p>
         </div>
-    </footer>    
+    </footer>
+    
+    <script src="../../../index.js"></script>
 </body>
 </html>

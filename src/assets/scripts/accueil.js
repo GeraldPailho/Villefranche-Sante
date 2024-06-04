@@ -8,7 +8,7 @@ let imgRecherche = document.getElementById('imgSearch');
 // écoute le click sur l'image
 imgRecherche.addEventListener('click', function(){
 
-    // récupure une liste de noeud (listNode) avec un seul élément dans le tableau [0]
+    // récupure une liste de noeud (listNode) avec un seul élément dans la liste [0]
     let barreRecherche = document.getElementsByName('textUser');
 
     // met le focus dans la barre de chercher du header

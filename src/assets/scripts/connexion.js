@@ -1,9 +1,10 @@
+// ***** FORMULAIRE DE CONNEXION *****
+
 // on récupère tout le formulaire
 let form = document.getElementById('formConnexion');
 
-// écouter la modification du champ email avec : addEventListener()-> écouter, valeur 'change'-> au changement de l'input, function(){}-> indiquer la foncion à appliquer
+// écouter la modification du champ email
 form.email.addEventListener('change', function(){
-    // this = élément qui est écouté (form.email = email entré dans l'input)
     validEmail(this);
 })
 
@@ -17,11 +18,11 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
 
     if ((validEmail(form.email) == true) && (validMp(form.mp) == true)) {   
-        form.submit(); // on soumet le formulaire
+        form.submit(); // on soumet le formulaire (vérification si compte existant dans le backend)
     }
 })
 
-// ***** VALIDATION EMAIL *****
+// VALIDATION EMAIL
 const validEmail = (email) => {
 
     // création de la regex validation email
@@ -32,7 +33,6 @@ const validEmail = (email) => {
     // récupère l'élément small après l'élément input de l'email
     let smallEmail = document.getElementById('smallEmail');
 
-    // if (testEmail) = if (testEmail == true)
     if (testEmail == false) {
         smallEmail.innerHTML = "Email invalide !";
         smallEmail.classList.add('text-danger');
@@ -44,7 +44,7 @@ const validEmail = (email) => {
     }
 }
 
-// ***** VALIDATION MOT DE PASSE *****
+// VALIDATION MOT DE PASSE
 const validMp = (mp) => {
 
     let msg;
@@ -79,3 +79,12 @@ const validMp = (mp) => {
         return true;
     }
 }
+
+
+// ***** BOUTON CREER COMPTE *****
+
+// récupère le bouton
+let btnCreer = document.querySelector('#btnCreer');
+
+// écoute le click sur le bouton et change l'url de la page
+btnCreer.addEventListener('click', function(){window.location.href = './creerCompte.html'});

@@ -54,28 +54,32 @@ header nav div a #logo {
 }
 header nav div h2 {
     font-size: 90% !important;
-    font-family: gorgia-b;
+    font-family: georgia;
 }
 header nav div div form {
     width: 80% !important;
 }
 
-/* style du bouton Remonter en haut de page */
-    #btnTop {
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        border: none; 
-        background-color: rgb(116, 103, 112, 0.5);
-        color: white;
-        padding: 15px;
-        border-radius: 10px;
-    }
+main div div h2, h3 {
+    font-family: georgia;
+}
 
-    #btnTop:hover {
-        background-color: #746770;
-    }
+/* style du bouton Remonter en haut de page */
+#btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none; 
+    background-color: rgb(116, 103, 112, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#btnTop:hover {
+    background-color: #746770;
+}
 
 
 @media screen and (min-width: 576px) and (max-width: 767px) {

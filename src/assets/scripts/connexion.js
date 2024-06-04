@@ -3,9 +3,8 @@
 // on récupère tout le formulaire
 let form = document.getElementById('formConnexion');
 
-// écouter la modification du champ email avec : addEventListener()-> écouter, valeur 'change'-> au changement de l'input, function(){}-> indiquer la foncion à appliquer
+// écouter la modification du champ email
 form.email.addEventListener('change', function(){
-    // this = élément qui est écouté (form.email = email entré dans l'input)
     validEmail(this);
 })
 
@@ -19,7 +18,7 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
 
     if ((validEmail(form.email) == true) && (validMp(form.mp) == true)) {   
-        form.submit(); // on soumet le formulaire
+        form.submit(); // on soumet le formulaire (vérification si compte existant dans le backend)
     }
 })
 
@@ -88,4 +87,4 @@ const validMp = (mp) => {
 let btnCreer = document.querySelector('#btnCreer');
 
 // écoute le click sur le bouton et change l'url de la page
-btnCreer.addEventListener('click', function(){document.location.href = './creerCompte.html'});
+btnCreer.addEventListener('click', function(){window.location.href = './creerCompte.html'});

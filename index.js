@@ -25,10 +25,15 @@ for (let i = 0; i < btnConnexion.length; i++) {
 
 // Lorsque l'utilisateur fait défiler vers le bas de 20px depuis le haut du document, affichez le bouton
 window.onscroll = function() {
+
+    let btnTop = document.getElementById("btnTop");
+    
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("btnTop").style.display = "block";
+        btnTop.removeAttribute('style');
+        btnTop.setAttribute('style', 'display: block;');
     } else {
-        document.getElementById("btnTop").style.display = "none";
+        btnTop.removeAttribute('style');
+        btnTop.setAttribute('style', 'display: none;');
     }
 };
 
@@ -37,6 +42,7 @@ const topFunction = () => {
     document.body.scrollTop = 0; // Pour Safari
     document.documentElement.scrollTop = 0; // Pour les autres navigateurs
 }
+
 // export const topFunction = () => {
 //     document.body.scrollTop = 0; // Pour Safari
 //     document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera

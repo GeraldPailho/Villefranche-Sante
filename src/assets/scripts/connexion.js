@@ -1,24 +1,29 @@
 // ***** FORMULAIRE DE CONNEXION *****
 
 // on récupère tout le formulaire
-let form = document.getElementById('formConnexion');
+let formConnexion = document.getElementById('formConnexion');
 
 // écouter la modification du champ email
-form.email.addEventListener('change', function(){
+formConnexion.email.addEventListener('change', function(){
     validEmail(this);
 })
 
 // écouter la modification du champ mot de passe
-form.mp.addEventListener('change', function(){
+formConnexion.mp.addEventListener('change', function(){
     validMp(this);
 })
 
 // écouter l'envoi du formulaire
-form.addEventListener('submit', function(e){
+formConnexion.addEventListener('submit', function(e){
     e.preventDefault();
 
-    if ((validEmail(form.email) == true) && (validMp(form.mp) == true)) {   
-        form.submit(); // on soumet le formulaire (vérification si compte existant dans le backend)
+    const email = formConnexion.email.value;
+    const mp = formConnexion.mp.value;
+    const form = {email, mp};
+
+    if ((validEmail(formConnexion.email) == true) && (validMp(formConnexion.mp) == true)) {   
+
+        localStorage.setItem("formConnexion", JSON.stringify(form));
     }
 })
 

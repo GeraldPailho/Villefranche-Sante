@@ -17,15 +17,19 @@ formConnexion.mp.addEventListener('change', function(){
 formConnexion.addEventListener('submit', function(e){
     e.preventDefault();
 
-    const email = formConnexion.email.value;
-    const mp = formConnexion.mp.value;
-    const form = {email, mp};
+    // const email = formConnexion.email.value;
+    // const mp = formConnexion.mp.value;
+    // const form = {email, mp};
+
+    // saveForm(form);
 
     if ((validEmail(formConnexion.email) == true) && (validMp(formConnexion.mp) == true)) {   
 
-        localStorage.setItem("formConnexion", JSON.stringify(form));
+        // localStorage.setItem("formConnexion", JSON.stringify(form));
+        formConnexion.submit();
     }
 })
+
 
 // VALIDATION EMAIL
 const validEmail = (email) => {
